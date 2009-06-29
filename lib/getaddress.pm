@@ -1,6 +1,6 @@
 package getaddress;
 
-use 5.008005;
+use 5.006001;
 use strict;
 use warnings;
 use Carp;
