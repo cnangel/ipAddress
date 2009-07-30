@@ -23,6 +23,7 @@ while (my $line = <$fp>)
 	$line =~ s/\s*$//;
 	next unless ($line);
 	$str = &ipwhere ($line, $datafile);
-	warn from_to($str, "gbk", "utf8") . "\n";
+	from_to($str, "gbk", "utf8");
+	warn "|" . $line . "\t" . $str . "\n";
 }
 close($fp);

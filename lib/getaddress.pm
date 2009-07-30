@@ -62,11 +62,11 @@ sub ipwhere
 	my $ipfile = shift;
 	$ipfile = "data/QQWry.Dat" unless ($ipfile);
 	my $ipaddr = getipwhere ($ipfile, $ip);
-	return '鏈煡鍦板尯' unless ($ipaddr);
+	return '未知地区' unless ($ipaddr);
 	$ipaddr =~ s/CZ88\.NET//ig;
 	$ipaddr =~ s/^\s*//;
 	$ipaddr =~ s/\s*$//;
-	$ipaddr = '鏈煡鍦板尯' if (!$ipaddr || $ipaddr =~ /鏈煡|http/i);
+	$ipaddr = '未知地区' if (!$ipaddr || $ipaddr =~ /未知|http/i);
 	return $ipaddr;
 }
 

@@ -85,6 +85,7 @@ IP_INFO *get_ip_by_index(unsigned long index_addr, FILE *fp) {
 		return ipinfo;
 	}
 	record_addr = get_long_addr3(addr);
+	printf("%u\n", ip[3]);
 	sprintf(ipinfo->start_ip, "%u.%u.%u.%u", ip[3], ip[2], ip[1], ip[0]);
 	fseek(fp, record_addr, SEEK_SET);
 	if (!fread(ip, 4, 1, fp)) {
@@ -188,9 +189,8 @@ unsigned long search_ip(char *ip_in, FILE *fp) {
 }
 
 char * getipwhere (char *filename, char *ip){
-	char buff[64];
+	char buff[256];
 	FILE *fp = fopen(filename, "r");
-//	if (fp == NULL) exit(EXIT_FAILURE);
 	if (fp == NULL) return NULL;
 	IP_INFO *ipinfo = get_ip_by_index(search_ip(ip, fp), fp);
 	sprintf(buff, "%s %s", ipinfo->country, ipinfo->area);

@@ -1,5 +1,6 @@
 bin/common.pl
 bin/getaddress.pl
+bin/sample.pl
 bin/test.pl
 Changes
 const-c.inc
@@ -17,3 +18,4 @@ QQWry.c
 QQWry.h
 README
 t/getaddress.t
+t/ip.txt
