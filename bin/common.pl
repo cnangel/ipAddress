@@ -5,7 +5,7 @@ use warnings;
 
 use Time::HiRes;
 
-my $path = '/home/lijunlia/works/data';
+my $path = '/home/cnangel/works/getaddress/data';
 
 {
 	my $s = Time::HiRes::time ();
