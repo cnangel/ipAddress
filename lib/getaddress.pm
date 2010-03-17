@@ -27,7 +27,7 @@ our @EXPORT = qw(
 	ipwhere
 );
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -106,7 +106,7 @@ If you have a web site set up for your module, mention it here.
 
 =head1 AUTHOR
 
-Junliang Li, E<lt>lijunlia@localdomainE<gt>
+Junliang Li, E<lt>cnangel@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
