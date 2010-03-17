@@ -1,4 +1,5 @@
 bin/common.pl
+bin/g.pl
 bin/getaddress.pl
 bin/sample.pl
 bin/test.pl
@@ -11,11 +12,13 @@ fallback/const-xs.inc
 getaddress.xs
 lib/getaddress.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 MANIFEST.SKIP
 ppport.h
 QQWry.c
 QQWry.h
 README
-t/getaddress.t
+t/address.txt
+t/alone.t
 t/ip.txt
+t/multi.t
